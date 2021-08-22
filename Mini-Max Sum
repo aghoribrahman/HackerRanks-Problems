@@ -1,0 +1,25 @@
+
+import math
+import os
+import random
+import re
+import sys
+
+
+def miniMaxSum(arr):
+    
+    v=sorted(arr)
+    
+    for i in range(len(v)-1):
+        
+        c=sum(v)-v[-1]
+        
+        d=sum(v)-v[0]
+        
+    print(c,d)
+
+if __name__ == '__main__':
+
+    arr = list(map(int, input().rstrip().split()))
+
+    miniMaxSum(arr)
